@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div class="heading ion-padding">
+    <ion-img #titulo src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Logo_DuocUC.svg"></ion-img>
+  </div>
+  <ion-title class="ion-padding-top ion-text-center">
+  </ion-title>
+  <body>
+      <div class="ion-padding-vertical">
+        <ion-card-content class="ion-text-center">
+          <ion-card-title class="ion-text-center">
+            <h1 #titulo1>Te LlevoAPP</h1>
+            <h1 #titulo2>Bienvenido</h1>
+            <h1 #titulo2>Manu</h1>
+          </ion-card-title>
+          <div class="login-form ion-padding">
+            <div>
+              <ion-button (click)="ingresaPasajero()" shape="block">Ingresar como Pasajero</ion-button>
+              <br>
+              <ion-button (click)="ingresaConductor()" shape="block">Ingresar como Conductor</ion-button>
+            </div>
+          </div>
+        </ion-card-content>
+      </div>
+  </body>
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nueva Ruta</ion-title>
+    <ion-buttons slot="start"> <!-- Boton para retroceder -->
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-item>
+      <ion-select placeholder="Seccione Ciudad" [(ngModel)]="user">
+        <ion-select-option *ngFor="let usu of users" [value]="usu">{{usu.name}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+  <ion-card-header>
+    <ion-title>Dirección de la Ciudad</ion-title>
+  </ion-card-header>
+  <ion-item class="ion-padding-horizontal">
+    <ion-label position="floating">Dirección</ion-label>
+    <ion-input [(ngModel)]="post.title"></ion-input>
+  </ion-item>
+  <ion-item class="ion-padding-horizontal">
+    <ion-label position="floating">Valor</ion-label>
+    <ion-input placeholder="Max valor $2.000" inputmode="numeric" type=number [(ngModel)]="post.body">$</ion-input>
+  </ion-item>
+  <ion-item class="ion-padding-horizontal">
+    <ion-label position="floating">Día</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MM YY" [(ngModel)]="post.dia"></ion-datetime>
+  </ion-item>
+  <ion-item class="ion-padding-horizontal">
+    <ion-label position="floating">Hora</ion-label>
+    <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [(ngModel)]="post.hora"></ion-datetime>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button shape="round" expand="block" (click)="limpiar()">Limpiar</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button shape="round" expand="block" (click)="guardarPost()">Guardar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

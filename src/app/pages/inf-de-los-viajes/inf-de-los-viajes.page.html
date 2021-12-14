@@ -1,0 +1,55 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <!-- Boton para retroceder -->
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Te LlevoAPP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <h3 class="ion-text-center">Informacion del los Viajes</h3>
+  <ion-list>
+    <ion-item *ngIf="!posts"></ion-item>
+    <ion-item *ngFor="let post of posts">
+      <ion-label>
+        <h3>{{post.title}}</h3>
+        <p>{{post.dia}} a las {{post.hora}}</p>
+        <p>${{post.body}}</p> 
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h3>Av Libertad #235</h3>
+        <p> 2021-12-15 a las 18:00</p>
+        <p>$1600</p> 
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h3>Av Francia #123</h3>
+        <p>2021-12-14  a las 23:00</p>
+        <p>$1700</p> 
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h3>Diego Portales #234</h3>
+        <p>2021-12-13 a las 23:30</p>
+        <p>$1900</p>  
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-footer class="ion-no-border">
+    <ion-toolbar>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button (click)="logout()">
+            <ion-icon name="exit-outline"></ion-icon>
+            <ion-label>Salir</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

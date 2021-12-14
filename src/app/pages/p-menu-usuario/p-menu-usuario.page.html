@@ -1,0 +1,66 @@
+<ion-content [fullscreen]="true">
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <!-- Boton para retroceder -->
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Te LlevoAPP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+ <!--<ion-card-content class="ion-text-start">
+    <h2 class="ion-text-center" color="black"> Bienvenido a Te LlevoAPP </h2>
+  </ion-card-content> -->
+    <h3 class="ion-text-center">Viajes disponibles desde Duoc UC</h3>
+  <ion-list>
+    <ion-item *ngIf="!posts"></ion-item>
+    <ion-item *ngFor="let post of posts">
+      <ion-label>
+        <h3>{{post.title}}</h3>
+      </ion-label>
+      <ion-button href="mailto:mana.diaz@duocuc.cl?subject=TeLlevoAPP&body=Se ha inscrito en el viaje, muchas gracias por preferirnos.">
+        <ion-icon name="mail-outline" slot="start" ></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-start">
+        <h3 class="centrado">Av Libertad #235</h3> 
+      </ion-label>
+      <ion-button href="mailto:mana.diaz@duocuc.cl?subject=TeLlevoAPP&body=Se ha inscrito en el viaje, muchas gracias por preferirnos.">
+        <ion-icon name="mail-outline" slot="start" ></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-start">
+        <h3 class="centrado">Av Francia #123</h3> 
+      </ion-label>
+      <ion-button href="mailto:mana.diaz@duocuc.cl?subject=TeLlevoAPP&body=Se ha inscrito en el viaje, muchas gracias por preferirnos.">
+        <ion-icon name="mail-outline" slot="start" ></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-start">
+        <h3 class="centrado">Diego Portales #234</h3> 
+      </ion-label>
+      <ion-button href="mailto:mana.diaz@duocuc.cl?subject=TeLlevoAPP&body=Se ha inscrito en el viaje, muchas gracias por preferirnos.">
+        <ion-icon name="mail-outline" slot="start" ></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="datosViaje()" shape="block">información de los Viajes</ion-button>
+  <br>
+  <ion-button (click)="addDirection()" shape="block">Abrir Mapa</ion-button>
+  <ion-footer class="ion-no-border">
+    <ion-toolbar>
+      <ion-tabs>
+        <ion-tab-bar  slot="bottom">
+          <ion-tab-button (click)="logout()">
+            <ion-icon name="exit-outline"></ion-icon>
+            <ion-label>Salir</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Historial de Viajes</ion-title>
+    <ion-buttons slot="start"> <!-- Boton para retroceder -->
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list> 
+    <ion-item *ngIf="!posts"></ion-item>
+  <ion-item *ngFor="let post of posts">
+    <ion-label><h4>{{post.title}}</h4><p>{{post.dia}} a las {{post.hora}}</p><p>${{post.body}}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>
