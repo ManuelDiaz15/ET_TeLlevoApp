@@ -25,7 +25,7 @@ export class APIClientService {
     // apiURL = 'https://my-json-server.typicode.com/lloni/apitellevo/' 
 
 
-  apiURL = 'http://192.168.0.8:3000' 
+  apiURL = 'http://192.168.1.83:3000' 
 
   constructor(private http: HttpClient) { }
 
