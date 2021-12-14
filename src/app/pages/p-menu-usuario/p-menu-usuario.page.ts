@@ -31,7 +31,8 @@ export class PMenuUsuarioPage implements OnInit {
      public navCtrl: NavController,
      private modalController: ModalController,
      private api:APIClientService) {
-
+       
+      const navigation = router.getCurrentNavigation();
 
     this.activeroute.queryParams.subscribe(params=>{  //Utilizo lambda
       if(this.router.getCurrentNavigation().extras.state){ // Con este If verificamos que el NavigationExtras trae un paramentro y si es lo trae lo vamos a obtener con extras.state.usuario;

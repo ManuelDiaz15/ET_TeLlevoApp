@@ -1,7 +1,8 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
-
+import { RouterTestingModule } from '@angular/router/testing';
 import { PHistorialViajesPage } from './p-historial-viajes.page';
+import {HttpClientModule} from '@angular/common/http';
 
 describe('PHistorialViajesPage', () => {
   let component: PHistorialViajesPage;
@@ -10,7 +11,7 @@ describe('PHistorialViajesPage', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ PHistorialViajesPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot(),RouterTestingModule,HttpClientModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(PHistorialViajesPage);
