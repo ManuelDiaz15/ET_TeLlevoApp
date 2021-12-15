@@ -31,9 +31,8 @@ declare var google: any;
       styleUrls: ['./googlemaps.component.scss']
 })
 export class GooglemapsComponent implements OnInit {
-
-
-      // coordenadas cuenca
+      
+      // coordenadas 
       @Input() position = {
             lat: -33.0336892,
             lng: -71.5331841
@@ -59,12 +58,10 @@ export class GooglemapsComponent implements OnInit {
 
       ngOnInit(): void {
             this.init();
-
             console.log('position ->', this.position)
       }
 
       async init() {
-
             this.googlemapsService.init(this.renderer, this.document).then(() => {
                   this.initMap();
             }).catch((err) => {
@@ -159,6 +156,7 @@ export class GooglemapsComponent implements OnInit {
 
       aceptar() {
             console.log('click aceptar -> ', this.positionSet);
+            
             this.modalController.dismiss({ pos: this.positionSet })
       }
 
