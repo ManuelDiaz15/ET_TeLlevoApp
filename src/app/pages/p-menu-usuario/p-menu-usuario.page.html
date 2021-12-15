@@ -17,17 +17,17 @@
     <ion-item *ngIf="!posts"></ion-item>
     <ion-item *ngFor="let post of posts">
       <ion-label>
-        <h3>{{post.title}}</h3>
+         <h3>{{post.title}}</h3>
       </ion-label>
-      <ion-button href="mailto:mana.diaz@duocuc.cl?subject=TeLlevoAPP&body=Se ha inscrito en el viaje, muchas gracias por preferirnos.">
+      <ion-button href="mailto:mana.diaz@duocuc.cl?cc=jon.pachecor@duocuc.cl&&subject=TeLlevoAPP&body= Nos vemos afuera del Duoc UC.%0D%0A Conductor: Lloni.%0D%0A Pasajero: Manu.%0D%0A Con dirección a {{post.title}} %0D%0A El dia {{post.dia}} %0D%0A A las {{post.hora}} %0D%0A Valor del Viaje ${{post.body}}">
         <ion-icon name="mail-outline" slot="start" ></ion-icon>
       </ion-button>
     </ion-item>
     <ion-item>
       <ion-label class="ion-text-start">
-        <h3 class="centrado">Av Libertad #235</h3> 
+        <h3 class="centrado">Av Libertad #235</h3>                                                                                                            <!-- El dia 2 %0D%0A A las 18:00 %0D%0A Valor del Viaje $1600" -->
       </ion-label>
-      <ion-button href="mailto:mana.diaz@duocuc.cl?subject=TeLlevoAPP&body=Se ha inscrito en el viaje, muchas gracias por preferirnos.">
+      <ion-button href="mailto:mana.diaz@duocuc.cl?cc=jon.pachecor@duocuc.cl&&subject=TeLlevoAPP&body= Nos vemos afuera del Duoc UC Conductor: Lloni Pasajero: Manu Con dirección a Av Libertad #235">
         <ion-icon name="mail-outline" slot="start" ></ion-icon>
       </ion-button>
     </ion-item>
@@ -35,7 +35,7 @@
       <ion-label class="ion-text-start">
         <h3 class="centrado">Av Francia #123</h3> 
       </ion-label>
-      <ion-button href="mailto:mana.diaz@duocuc.cl?subject=TeLlevoAPP&body=Se ha inscrito en el viaje, muchas gracias por preferirnos.">
+      <ion-button href="mailto:mana.diaz@duocuc.cl?cc=jon.pachecor@duocuc.cl&&subject=TeLlevoAPP&body= Nos vemos afuera del Duoc UC.%0D%0A Conductor: Lloni.%0D%0A Pasajero: Manu.%0D%0A Con dirección a Av Francia #123">
         <ion-icon name="mail-outline" slot="start" ></ion-icon>
       </ion-button>
     </ion-item>
@@ -43,7 +43,7 @@
       <ion-label class="ion-text-start">
         <h3 class="centrado">Diego Portales #234</h3> 
       </ion-label>
-      <ion-button href="mailto:mana.diaz@duocuc.cl?subject=TeLlevoAPP&body=Se ha inscrito en el viaje, muchas gracias por preferirnos.">
+      <ion-button href="mailto:mana.diaz@duocuc.cl?cc=jon.pachecor@duocuc.cl&&subject=TeLlevoAPP&body= Nos vemos afuera del Duoc UC.%0D%0A Conductor: Lloni.%0D%0A Pasajero: Manu.%0D%0A Con dirección a Diego Portales #234">
         <ion-icon name="mail-outline" slot="start" ></ion-icon>
       </ion-button>
     </ion-item>

@@ -73,19 +73,19 @@
   "posts": [
     {
       "id": 1,
-      "title": "5 Norte",
-      "body": 1500,
-      "dia": "2021-12-12",
-      "hora": "22:21",
+      "title": " 15 Norte",
+      "body": 1850,
+      "dia": "2021-12-16",
+      "hora": "01:52",
       "userId": 1
     },
     {
       "id": 2,
-      "title": " El Danilo",
-      "body": 2000,
-      "dia": "2021-12-14",
-      "hora": "18:31",
-      "userId": 1
+      "title": " La Playa ",
+      "body": 1990,
+      "dia": "2021-12-16",
+      "hora": "01:03",
+      "userId": 2
     }
   ],
   "clients": [
