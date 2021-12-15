@@ -1,4 +1,5 @@
 import { browser, element, by } from "protractor";
+import { AppPage } from './app.po';
 
 describe('Pruebas e2e', () => {
 
@@ -17,6 +18,7 @@ describe('Pruebas e2e', () => {
     it('En el menu usuario aparece btn SALIR', () => {
         expect(element(by.css('.page-selected ion-label')).getText()).toContain('Salir');
     });
+
 
   
   });
