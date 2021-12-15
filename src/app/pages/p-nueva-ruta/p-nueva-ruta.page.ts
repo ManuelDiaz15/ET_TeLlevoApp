@@ -63,7 +63,6 @@ export class PNuevaRutaPage {
           this.getPosts();
         }
         error => {
-          console.log("Error" + error)
         }
       } else {
   
