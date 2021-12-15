@@ -1,5 +1,4 @@
 import { browser, element, by } from "protractor";
-import { AppPage } from './app.po';
 
 describe('Pruebas e2e', () => {
 
