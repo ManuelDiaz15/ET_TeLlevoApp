@@ -14,9 +14,6 @@ describe('APIClientService', () => {
     service = TestBed.inject(APIClientService);
   });
 
-
-
-
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
