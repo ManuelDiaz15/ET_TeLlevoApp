@@ -7,8 +7,9 @@
       </ion-buttons>
       <ion-title>Te LlevoAPP</ion-title>
     </ion-toolbar>
+    
   </ion-header>
-    <h3 class="ion-text-center">Informacion del los Viajes</h3>
+  <h3 class="txt">Informacion del los Viajes</h3>
   <ion-list>
     <ion-item *ngIf="!posts"></ion-item>
     <ion-item *ngFor="let post of posts">
@@ -40,16 +41,4 @@
       </ion-label>
     </ion-item>
   </ion-list>
-  <ion-footer class="ion-no-border">
-    <ion-toolbar>
-      <ion-tabs>
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button (click)="logout()">
-            <ion-icon name="exit-outline"></ion-icon>
-            <ion-label>Salir</ion-label>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
-    </ion-toolbar>
-  </ion-footer>
 </ion-content>
