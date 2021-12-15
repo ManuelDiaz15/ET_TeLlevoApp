@@ -25,6 +25,7 @@ export class PRecuperarPasswordPage implements OnInit {
   ngOnInit() {
   }
   
+  
   async presentToast() {
     if(this.datocorreo == null)
     {
