@@ -73,26 +73,18 @@
   "posts": [
     {
       "id": 1,
-      "title": " 15 Norte",
+      "title": " 1 Norte con Los Algarrobos",
       "body": 1850,
       "dia": "2021-12-16",
-      "hora": "01:52",
+      "hora": "07:52",
       "userId": 1
     },
     {
       "id": 2,
-      "title": " La Playa ",
-      "body": 1990,
+      "title": "1 Norte con Los Abetos",
+      "body": 1500,
       "dia": "2021-12-16",
-      "hora": "01:03",
-      "userId": 2
-    },
-    {
-      "id": 4,
-      "title": " Quintero",
-      "body": 2000,
-      "dia": "2021-12-15",
-      "hora": "19:08",
+      "hora": "08:30",
       "userId": 2
     }
   ],

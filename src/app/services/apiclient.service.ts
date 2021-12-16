@@ -20,12 +20,12 @@ export class APIClientService {
 
   // apiURL = 'https://jsonplaceholder.typicode.com';
 
-  // apiURL = 'http://192.168.1.85:3000'
+  // apiURL = 'http://192.168.1.85:3000' http://192.168.0.8:3000
 
     // apiURL = 'https://my-json-server.typicode.com/lloni/apitellevo/' 
 
 
-  apiURL = 'http://192.168.0.8:3000' 
+  apiURL = 'https://lloni.github.io/apitellevo/db.json' 
 
   constructor(private http: HttpClient) { }
 
